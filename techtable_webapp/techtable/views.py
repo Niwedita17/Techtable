@@ -35,4 +35,61 @@ def contact_us(request):
 def applyforintenship(request):
     return render(request, 'techtable/applyforajob.html')
 
+def about_us(request):
+    return render(request, 'techtable/about-us.html')
+
+
+def blog(request):
+    return render(request, 'techtable/blog.html')
+
+
+def blog_detail(request):
+    return render(request, 'techtable/blog-detail.html')
+
+
+def blog_full_width(request):
+    return render(request, 'techtable/blog-full-width.html')
+
+def blog_grid(request):
+    return render(request, 'techtable/blog-grid.html')
+
+def candidate_detail(request):
+    return render(request, 'techtable/candidate-detail.html')
+
+def candidate_listing(request):
+    return render(request, 'techtable/company-listing.html')
+
+def company_detail(request):
+    return render(request, 'techtable/company-detail.html')
+
+def dashboard(request):
+    return render(request, 'techtable/dashboard.html')
+
+def developers(request):
+    return render(request, 'techtable/developers.html')
+
+def edit_profile(request):
+    return render(request, 'techtable/edit-profile.html')
+
+
+def faqs(request):
+    return render(request, 'techtable/faqs.html')
+
+
+def job_detail(request):
+    return render(request, 'techtable/job-detail.html')
+
+def job_listing(request):
+    return render(request, 'techtable/job-listing.html')
+
+def packages(request):
+    return render(request, 'techtable/packages.html')
+
+def post_job(request):
+    return render(request, 'techtable/post-job.html')
+
+def typography(request):
+    return render(request, 'techtable/typography.html')
+
+
 
