@@ -1,0 +1,74 @@
+{% extends 'techtable/base.html' %}
+{% load static %}
+
+{% block title_content %}
+<title> Home </title>
+{% endblock %}
+
+{% block main_content %}
+
+
+<!-- Page Title start -->
+<section id="pageTitle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <h1 class="page-heading">Login</h1>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="breadCrumb"><a href="#">Home</a> / <span>Job Name</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Page Title End -->
+
+<section id="listpgWraper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="userccount">
+          <div class="socialLogin">
+            <h5>Login Or Register with Social</h5>
+            <a href="#." class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="#." class="gp"><i class="fa fa-google-plus" aria-hidden="true"></i></a> <a href="#." class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a> </div>
+          <h5>User Login</h5>
+          <!-- login form -->
+          <div class="formpanel">
+            <div class="formrow">
+              <input type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="formrow">
+              <input type="text" class="form-control" placeholder="Password">
+            </div>
+            <input type="submit" class="btn" value="Login">
+          </div>
+          <!-- login form  end--> 
+          
+          <!-- sign up form -->
+          <div class="newuser"><i class="fa fa-user" aria-hidden="true"></i> New User? <a href="{% url 'account:register' %}">Register Here</a></div>
+          <!-- sign up form end--> 
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Copyright-->
+<section id="copyright">
+  <div class="container">
+    <div class="bttxt">Copyright &copy; 2017 Your Company Name. All Rights Reserved. Design by: <a href="http://graphicriver.net/user/ecreativesol" target="_blank">eCreativeSolutions</a></div>
+  </div>
+</section>
+
+<!-- Bootstrap's JavaScript --> 
+<script src="{% static 'techtable/js/jquery-2.1.4.min.js' %}"></script>
+<script src="{% static 'techtable/js/bootstrap.min.js' %}"></script>
+
+<!-- Owl carousel --> 
+<script src="{% static 'techtable/js/owl.carousel.js' %}"></script>
+
+<!-- Custom js --> 
+<script src="{% static 'techtable/js/script.js' %}"></script>
+
+{% endblock %}

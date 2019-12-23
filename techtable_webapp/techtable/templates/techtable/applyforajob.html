@@ -1,0 +1,123 @@
+{% extends 'techtable/base.html' %}
+{% load static %}
+
+{% block title_content %}
+<title> Home </title>
+{% endblock %}
+
+{% block main_content %}
+
+
+<!-- Page Title start -->
+<section id="pageTitle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <h1 class="page-heading">apply</h1>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="breadCrumb"><a href="#.">Home</a> / <span>Apply Job</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Page Title End -->
+
+<section id="listpgWraper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="userccount">
+          <div class="formpanel"> 
+            
+            <!-- Job Information -->
+            <h5>Your Information</h5>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="formrow">
+                  <input type="text" name="jobtitle" class="form-control" placeholder="Your Name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="formrow">
+                    <input type="text" name="jobtitle" class="form-control" placeholder="Contact No">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="formrow">
+                    <input type="text" name="jobtitle" class="form-control" placeholder="Email ID">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="formrow">
+                  <select class="form-control" name="location">
+                    <option>Location</option>
+                    <option>New York</option>
+                    <option>Atlanta</option>
+                    <option>California</option>
+                    <option>Verginia</option>
+                    <option>San Joes</option>
+                  </select>
+                </div>
+              </div>
+             
+              <div class="col-md-3">
+                <div class="formrow">
+                  <select class="form-control" name="experience">
+                    <option>Experience</option>
+                    <option>Fresh</option>
+                    <option>1 Year</option>
+                    <option>2 Years</option>
+                    <option>3 Years</option>
+                    <option>4 Years</option>
+                    <option>5 Years</option>
+                    <option>6 Years</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="formrow">
+                  <select class="form-control" name="gender">
+                    <option>Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Any</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="formrow">
+                  <select class="form-control" name="nationality">
+                    <option>Nationality</option>
+                    <option>United States</option>
+                    <option>Australia</option>
+                    <option>United Kingdom</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="col-md-12">
+                <div class="formrow">
+                	<ul class="row featchoose">
+                    	<li class="col-md-4"><input type="checkbox" name=""> Your Info</li>
+                        <li class="col-md-4"><input type="radio" name=""> Your radio Label</li>
+                    </ul>
+                </div>
+              </div>
+              
+              <div class="col-md-12">
+                <div class="formrow">
+                  <textarea class="form-control" name="jobdetail" placeholder="Why Do you want to apply for this company"></textarea>
+                </div>
+              </div>    
+            </div>
+            <br>
+            <input type="submit" class="btn" value="Post Job">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

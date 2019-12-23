@@ -1,0 +1,307 @@
+{% extends 'techtable/base.html' %}
+{% load static %}
+
+{% block title_content %}
+<title> Home </title>
+{% endblock %}
+
+{% block main_content %}
+
+<!-- Search start -->
+<section id="searchwrap">
+  <div class="container">
+    <h3>Amazing Opportunities<span>Grab yours today.</span></h3>
+    <div class="searchbar row">
+        <div class="col-md-2"></div>
+      <div class="col-md-5">
+        <input type="text" class="form-control" placeholder="Enter Skills or title" />
+      </div>
+      <div class="col-md-2 connectedstartups">
+        <select class="form-control">
+          <option>I am</option>
+          <option>Looking for Opportunities</option>
+          <option>Posting Opportunities</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <input type="submit" class="btn" value="Search">
+      </div>
+    </div>
+    <!-- button start -->
+    <div class="getstarted"><a href="#."><i class="fa fa-user" aria-hidden="true"></i> Get Started Now</a></div>
+    <!-- button end --> 
+    
+  </div>
+</section>
+<!-- Search End --> 
+
+<!-- How it Works start -->
+<section id="howitwrap">
+  <div class="container"> 
+    <!-- title start -->
+    <div class="titleTop">
+      <div class="subtitle">Here You Can See</div>
+      <h3>How It <span>Works?</span></h3>
+    </div>
+    <!-- title end -->
+    <ul class="howlist row">
+      <!--step 1-->
+      <li class="col-md-4 col-sm-4">
+        <div class="iconcircle"><i class="fa fa-user" aria-hidden="true"></i></div>
+        <h4>Create An Account</h4>
+        <p>Signup as a student or start-up to make your profile
+        </p>
+      </li>
+      <!--step 1 end--> 
+      
+      <!--step 2-->
+      <li class="col-md-4 col-sm-4">
+        <div class="iconcircle"><i class="fa fa-black-tie" aria-hidden="true"></i></div>
+        <h4> <a href="{% url 'techtable:applyforintenship' %}">Apply for Internships</a></h4>
+        <p>
+          Go to start-up connect page and click on apply for internship, choose your profile you want to work for and apply.
+        </p>
+      </li>
+      <!--step 2 end--> 
+      
+      <!--step 3-->
+      <li class="col-md-4 col-sm-4">
+        <div class="iconcircle"><i class="fa fa-file-text" aria-hidden="true"></i></div>
+        <h4>Work with desired startup</h4>
+        <p>Choose your profile and start-up you want to work with as an intern to gain the amazing Experience.</p>
+      </li>
+      <!--step 3 end-->
+    </ul>
+  </div>
+</section>
+<!-- How it Works Ends --> 
+
+<!-- About us-->
+<section id="videowraper">
+    <div class="container"> 
+      <!-- title start -->
+      <div class="titleTop">
+        <div class="subtitle">Who are we</div>
+        <h3>About <span>Us</span></h3>
+      </div>
+        <div class="text-center about-us-text">
+            <p>Tech Table is an initiative by <strong>IITM students</strong> to provide one platform for the Engineers 
+              <strong>"From Learning to Earning".</strong> We aim to train Engineers and give them practical Experience 
+              to use Niche Technology through our "Start-up Connect" module, where we connect engineers to Tech Start-up.
+              <br>
+              We also provide a platform for the freelancer to earn money by their skills. we have expertise 
+              in a different field to provide technical support to early-stage startup to grow rapidly in their field.
+          </p>
+        </div>
+    </div>
+  </section>
+  <!-- About us ends -->
+
+<!-- Our Services -->
+<section id="greybg services-cont">
+  <div class="container"> 
+    <!-- title start -->
+    <div class="titleTop">
+      <div class="subtitle">some tagline</div>
+      <h3>Our <span>Services</span></h3>
+      <br><br><br>
+
+      <div class="row">
+
+        <div class="col-lg-3 ">
+                  <img src="{% static 'techtable/img/handshake.png' %}" width="150px">
+        </div>
+        <div class="col-lg-9 ">
+                  <h2>Startup Connect </h2>
+                  <br>
+                  <p>It is a platform to connect Engineering students and start-ups. 
+                    Get connected to best start-ups around India through this platform. 
+                    It is always a win-win to situation for both during <span style="font-weight: bold;">internship</span>. 
+                    As students get the hands-on experience and Industries get people to work in innovative ways.
+
+                  </p>
+                  <br>
+                    <div class="mt-button-text mt-style-button41"> <a href="#" class="mt-style-button normal">Know More</a> </div>
+
+        </div>
+
+      </div>
+      <div class="row">
+
+        <div class="col-lg-3 ">
+            <img src="{% static 'techtable/img/promotion.png' %}" width="150px">
+        </div>
+        
+        <div class="col-lg-9 ">
+            <h2>Trainings and Workshops</h2>
+            <br>
+            <p>Many engineers remain jobless because they do not have the required skills what company is looking for, 
+              Get trained with the experts in their domains on the latest technology and requirements.
+               We provide hands on experience by offering projects in the relevant fields. Be competitive and learning by joining this module. 
+            </p>
+            <br>
+              <div class="mt-button-text mt-style-button41"> <a href="#" class="mt-style-button normal">Know More</a> </div>
+        </div>
+
+      </div>
+      <div class="row">
+
+        <div class="col-lg-3 ">
+            <img src="{% static 'techtable/img/startup.png' %}" width="150px">
+        </div>
+
+        <div class="col-lg-9 ">
+            <h2>Startup support</h2>
+            <br>
+            <p>Having a good start is always an advantage for any one, This one is for the start-ups to provide them technical support in the beginning to accelerate their journey.
+
+              <br>•	Interactive website
+              •	Dynamic app design
+              •	Digital Marketing
+              •	Social Media advertising
+              •	Graphic design
+              •	SEO               
+            </p>
+            <br>
+            <div class="mt-button-text mt-style-button41"> <a href="#" class="mt-style-button normal">Know More</a> </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</section>
+<!-- End Services -->
+
+
+<!-- Top Employers start -->
+<section id="employ">
+  <div class="container"> 
+    <div class="titleTop">
+      <div class="subtitle">Here You Can See</div>
+            <h3>Connected <span>Startups</span></h3>
+      </div>
+<div class="row">
+
+  <div class="col-md-2 connectedstartups">
+    <a href="https://www.facebook.com/MicroLifeInnovations/">
+      <img src="{% static 'techtable/img/logos/micro-life.png' %}" alt="Micro Life Innovations" />
+    </a>
+  </div>
+  <div class="col-md-2 connectedstartups">
+    <a href="http://mistay.in/">
+      <img src="{% static 'techtable/img/logos/mistay.png' %}" alt="Mistay.in" />
+    </a>
+  </div>
+  <div class="col-md-2 connectedstartups">
+    <a href="http://www.tathya.earth/">
+      <img src="{% static 'techtable/img/logos/Tatya.jpg' %}" alt="Thathya" />
+    </a>
+  </div>
+  <div class="col-md-2 connectedstartups">
+    <a href="http://www.Hansmartimony.com">
+      <img src="{% static 'techtable/img/logos/logo_hans.png' %}" alt="Hansmartimony" />
+    </a>
+  </div>
+  <div class="col-md-2 connectedstartups">
+    <a href="http://www.Syook.com">
+      <img src="{% static 'techtable/img/logos/syook.png' %}" alt="Syook" />
+    </a>
+  </div>
+          <div class="col-md-2 connectedstartups">
+            <a href="http://www.Awiskarlab.com">
+                <img src="{% static 'techtable/img/logos/Awiskarlab.png' %}" alt="Awiskarlab" />
+            </a>
+          </div>
+
+</div>  
+  </div>
+</section>
+<!-- Top Employers ends --> 
+<!-- Support start -->
+<section id="amazing">
+  <div class="container"> 
+    <!-- title start -->
+    <div class="titleTop">
+      <div class="subtitle">Thanks for supporting!</div>
+      <h3>Our Amazing <span>Supportors</span></h3>
+    </div>
+    <!-- title end -->
+    <div class="row">
+      <div class="col-md-6 text-center">
+  <img src="{% static 'techtable/img/logos/nirmaan.png' %}" height="200px" />
+  <h3 style="padding-top: 20px;">Nirmaan</h3>
+      </div>
+      <div class="col-md-6 text-center">
+  <img src="{% static 'techtable/img/logos/Ecell.png' %}" height="200px" />
+  <h3 style="padding-top: 20px;">Ecell-IITM</h3>
+      </div>
+
+</div>
+
+  </div>
+</section>
+<!-- Supoort ends --> 
+
+
+<!-- Testimonials start -->
+<!-- <div class="section ">
+  <div class="container"> 
+
+    <div class="titleTop">
+      <div class="subtitle">Here You Can See</div>
+      <h3>Success <span>Stories</span></h3>
+    </div>
+
+    <ul class="testimonialsList">
+
+      <li class="item">
+        <div class="testimg"><img src="images/userimg.jpg" alt="Your alt text here" /></div>
+        <div class="clientname">Garry Miller Jr</div>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra id nunc at finibus. Etiam sollicitudin faucibus cursus. Proin luctus cursus nulla sed iaculis. Quisque vestibulum augue nec aliquet aliquet."</p>
+        <div class="clientinfo">CEO - Gates Inc</div>
+      </li>
+
+      <li class="item">
+        <div class="testimg"><img src="images/userimg.jpg" alt="Your alt text here" /></div>
+        <div class="clientname">Garry Miller Jr</div>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum viverra id nunc at finibus. Etiam sollicitudin faucibus cursus. Proin luctus cursus nulla sed iaculis. Quisque vestibulum augue nec aliquet aliquet."</p>
+        <div class="clientinfo">CEO - Gates Inc</div>
+      </li>
+
+    </ul>
+  </div>
+</div> -->
+<!-- Testimonials End  -->
+
+<!-- App Start -->
+<section id="appwraper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-6"> 
+        <!--app image Start-->
+        <div class="appimg"><img src="{% static 'techtable/img/logo_tagline.png' %}" alt="logo" /></div>
+        <!--app image end--> 
+      </div>
+      <div class="col-md-7 col-sm-6"> 
+        <!--app info Start-->
+        <div class="titleTop">
+          <div class="subtitle">Step Forword Now</div><br>
+          <h3>TechTable</h3>
+        </div>
+        <div class="subtitle2">A world of Opportunities in your hand</div>
+        <p>
+          Are you a startup looking for support or a student struggling for opportunities?
+
+          We here at TechTable connect you all to provide <strong>Opportunities</strong> to everyone and provide startup a stong support.
+        </p>
+            <div class="getstarted1"><a href="#."><i class="fa fa-user" aria-hidden="true"></i> Get Started Now</a></div>
+
+        <!--app info end--> 
+      </div>
+    </div>
+  </div>
+</section>
+<!-- App End --> 
+{% endblock %}

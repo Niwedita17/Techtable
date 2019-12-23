@@ -1,0 +1,93 @@
+<{% extends 'techtable/base.html' %}
+{% load static %}
+
+{% block title_content %}
+<title> Home </title>
+{% endblock %}
+
+{% block main_content %}
+
+<section id="pageTitle">
+    <div class="container">
+        <h1 class="page-heading text-center">Contact Us</h1>
+    </div>
+</section>
+<!-- Page Title End -->
+
+<!-- Contact us -->
+<section id="inner-page">
+    <div class="container">
+        <div class="contact-wrap">
+            <div class="row">
+                <div class="col-md-12 column">
+                    <div class="title"> <span style="color: rgb(131, 131, 131);">We Are Here For Your Help</span>
+                        <h2>GET IN TOUCH WITH <span style="color: dodgerblue;">US</span></h2>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 column">
+                    <div class="contact-now">
+                        <div class="contact"> <span><i class="fa fa-home"></i></span>
+                            <div class="information"> <strong>Address:</strong>
+                                <p>Taramani IIT Gate Rd,<br> Indian Institute Of Technology,<br> Chennai, Tamil Nadu<br> 600036</p>
+                            </div>
+                        </div>
+                        <!-- Contact Info -->
+                        <div class="contact"> <span><i class="fa fa-envelope"></i></span>
+                            <div class="information"> <strong>Email Address:</strong>
+                                <p>connecttechtable@gmail.com</p>
+                            </div>
+                        </div>
+                        <!-- Contact Info -->
+                        <div class="contact"> <span><i class="fa fa-phone"></i></span>
+                            <div class="information"> <strong>Phone No:</strong>
+                                <p>9940332489</p>
+                            </div>
+                        </div>
+                        <!-- Contact Info -->
+                    </div>
+                    <!-- Contact Now -->
+                </div>
+
+                <!-- Contact form -->
+                <div class="col-md-8 column">
+                    <div class="contact-form">
+                        <div id="message"></div>
+                        <form method="post" action="formspree.io/connecttechtable@gmail.com" name="contactform" id="contactform">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input name="name" type="text" id="name" placeholder="Full Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="phone" placeholder="Phone Number">
+                                </div>
+                                <div class="col-md-12">
+                                    <input name="email" type="text" id="email" placeholder="Email">
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea rows="4" name="comments" id="comments" placeholder="Comments"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button title="" class="button" type="submit" id="submit">Submit Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap's JavaScript -->
+<script src="{% static 'techtable/js/jquery-2.1.4.min.js' %}"></script>
+<script src="{% static 'techtable/js/bootstrap.min.js' %}"></script>
+
+<!-- Owl carousel -->
+<script src="{% static 'techtable/js/owl.carousel.js' %}"></script>
+
+<!-- Custom js -->
+<script src="{% static 'techtable/js/script.js' %}"></script>
+
+{% endblock %}

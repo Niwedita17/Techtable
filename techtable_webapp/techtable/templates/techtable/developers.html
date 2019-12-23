@@ -1,0 +1,99 @@
+
+{% extends 'techtable/base.html' %}
+{% load static %}
+
+{% block title_content %}
+<title> Home </title>
+{% endblock %}
+
+{% block main_content %}
+
+<section>
+<div class="container main">
+    <h1 class="text-center">
+        Meet our <span style="font-weight: bold; color: darkblue;">Developers</span>
+    </h1>
+
+    <div class="row">
+            <div class="col-md-4">
+
+                <div class="card-container">
+                    <div class="card-flip">
+                    <div class="card front">
+                        <img src="{% static 'techtable/img/developers/harsh.JPG' %}" class="card-img-top img-fluid">
+                        <div class="card-block">
+                        <h4 class="card-title">Harsh Goel</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card back">
+                        <div class="card-block">
+                        <h4 class="card-title">Front-end Developer</h4>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Linkedin</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+
+                    <div class="card-container">
+                    <div class="card-flip">
+                        <div class="card front">
+                        <img src="{% static 'techtable/img/developers/harsh.JPG' %}" class="card-img-top img-fluid">
+                        <div class="card-block">
+                            <h4 class="card-title">Harsh Goel</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        </div>
+                        <div class="card back">
+                        <div class="card-block">
+                            <h4 class="card-title">Front-end Developer</h4>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Linkedin</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+            </div>
+            <div class="col-md-4">
+
+                    <div class="card-container">
+                    <div class="card-flip">
+                        <div class="card front">
+                        <img src="{% static 'techtable/img/developers/harsh.JPG' %}" class="card-img-top img-fluid">
+                        <div class="card-block">
+                            <h4 class="card-title">Harsh Goel</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        </div>
+                        <div class="card back">
+                        <div class="card-block">
+                            <h4 class="card-title">Front-end Developer</h4>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Linkedin</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+            </div>
+        
+    </div>  
+    
+</div>
+</section>
+
+<!-- Bootstrap's JavaScript --> 
+<script src="{% static 'techtable/js/jquery-2.1.4.min.js' %}"></script>
+<script src="{% static 'techtable/js/bootstrap.min.js' %}"></script>
+
+<!-- Owl carousel --> 
+<script src="{% static 'techtable/js/owl.carousel.js' %}"></script>
+<!-- Custom js --> 
+<script src="{% static 'techtable/js/script.js' %}"></script>
+
+{% endblock %}
