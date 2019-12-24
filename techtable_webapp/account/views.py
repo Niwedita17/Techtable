@@ -33,6 +33,19 @@ def login(request):
     return render(request, 'account/login.html', {'form': form})
 
 def register(request):
+    fullname= user.fullname
+    username= user.username
+    email= user.email
+    pass= user.pass
+    confirmpass= user.confirmpass
+    companyname=user.companyname
+    username= user.companyusername
+    email= user.companyemail
+    pass= user.companypass
+    confirmpass= user.companyconfirmpass
+    
+    
     return render(request, 'account/register.html')
+    
     
 
