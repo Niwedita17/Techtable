@@ -15,16 +15,21 @@ def index(request):
     return render(request, 'techtable/index.html')
 
 def internapplytpage(request):
+#     jobprofile = user.jobprofile
+#     companytype = user.companytype
+#     worktime = user.worktime
+#     jobbrief = user.jobbrief
+#     joblocation = user.joblocation
     return render(request, 'techtable/internapplytpage.html')
 
 
 def postaninternsip(request):
     return render(request, 'techtable/postaninternsip.html')
-
+# not required for now
 def requestservices(request):
     return render(request, 'techtable/requestservices.html')
 
-
+# not required for now
 def provideserveices(request):
     return render(request, 'techtable/provideserveices.html')
 
@@ -33,6 +38,7 @@ def contact_us(request):
     return render(request, 'techtable/contact-us.html')
 
 def applyforintenship(request):
+    
     return render(request, 'techtable/applyforajob.html')
 
 def about_us(request):
@@ -42,14 +48,15 @@ def about_us(request):
 def blog(request):
     return render(request, 'techtable/blog.html')
 
-
+# not required for now
 def blog_detail(request):
     return render(request, 'techtable/blog-detail.html')
 
 
-def blog_full_width(request):
+def blog_full_width(request)
+    skillsrequired = user.skillsrequired:
     return render(request, 'techtable/blog-full-width.html')
-
+# not required for now
 def blog_grid(request):
     return render(request, 'techtable/blog-grid.html')
 
@@ -64,30 +71,56 @@ def company_detail(request):
 
 def dashboard(request):
     return render(request, 'techtable/dashboard.html')
-
+# not required for now
 def developers(request):
     return render(request, 'techtable/developers.html')
 
 def edit_profile(request):
     return render(request, 'techtable/edit-profile.html')
 
-
+# not required for now
 def faqs(request):
     return render(request, 'techtable/faqs.html')
 
 
 def job_detail(request):
+#     jobid = user.jobid
+#     jobprofile = user.jobprofile
+#     numberofopenings = user.numberofopenings
+#     jobdescription = user.jobdescription
+#     skillsrequired = user.skillsrequired
+#     jobresponsibilities = user.jobresponsibilities
+#     monthlystipend = user.monthlystipend
+#     perks = user.perks
+#     jobtype = user.jobtype 
+#     companytype = user.companytype
+#     worktime = user.worktime
+#     jobbrief = user.jobbrief
+#     joblocation = user.joblocation
     return render(request, 'techtable/job-detail.html')
-
+# not required for now
 def job_listing(request):
+    
     return render(request, 'techtable/job-listing.html')
-
+# not required for now
 def packages(request):
     return render(request, 'techtable/packages.html')
 
 def post_job(request):
+#     jobprofile = user.jobprofile
+#     numberofopenings = user.numberofopenings
+#     jobdescription = user.jobdescription
+#     skillsrequired = user.skillsrequired
+#     jobresponsibilities = user.jobresponsibilities
+#     monthlystipend = user.monthlystipend
+#     perks = user.perks
+#     jobtype = user.jobtype 
+#     companytype = user.companytype
+#     worktime = user.worktime
+#     jobbrief = user.jobbrief
+#     joblocation = user.joblocation
     return render(request, 'techtable/post-job.html')
-
+# not required for now
 def typography(request):
     return render(request, 'techtable/typography.html')
 
