@@ -18,8 +18,15 @@ def login(request):
             # log the user in
             user = form.get_user()
             # get user id
-            user_id = user.username
+            user_id = user.user_id
+            userpassword = user.pass
             login(request, user)
+             Seperate active tab for companies pls check in frontend I have updated it 
+            # get company id
+#             company_id = user.company_id
+#             companypassword = user.cpass
+
+            
             return HttpResponseRedirect(reverse('AttendanceManagement:student', args=(user_id,)))
     else:
         form = AuthenticationForm()
@@ -27,4 +34,5 @@ def login(request):
 
 def register(request):
     return render(request, 'account/register.html')
+    
 
