@@ -59,6 +59,7 @@ def blog_full_width(request)
 # not required for now
 def blog_grid(request):
     return render(request, 'techtable/blog-grid.html')
+def uploadCV(request):
 
 def candidate_detail(request):
     return render(request, 'techtable/candidate-detail.html')
