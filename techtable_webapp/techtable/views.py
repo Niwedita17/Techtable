@@ -36,18 +36,20 @@ def postaninternsip(request):
 #     job_description = user.job_description(Type a string #Paragraph)
     return render(request, 'techtable/postaninternsip.html')
 
-def requestservices(request):
+def requestservices(request): (not required)
     return render(request, 'techtable/requestservices.html')
 
 
-def provideserveices(request):
+def provideserveices(request):(not required)
     return render(request, 'techtable/provideserveices.html')
 
 
-def contact_us(request):
+def contact_us(request)￼ :
+
     return render(request, 'techtable/contact-us.html')
 
 def applyforintenship(request):
+    
     return render(request, 'techtable/applyforajob.html')
 
 def about_us(request):
@@ -73,17 +75,50 @@ def candidate_detail(request):
 
 def candidate_listing(request):
     return render(request, 'techtable/company-listing.html')
-
+def companydashboard(request):
+    return render(request,'techtable/companydashboard.html')
 def company_detail(request):
+    
     return render(request, 'techtable/company-detail.html')
 
-def dashboard(request):
+def myprofile(request):
+    name = user.name
+    myjobprofile = user.myjobprofile
+    mylocation = user.mylocation
+    mymobilenumber = user.mymymobilenumber
+    myemailid = user.myemailid
+    mywebsite= user.mywebsite
+    aboutme = user.aboutme
+    myspecialities = user.myspecialities
+    myjobexperience = user.myjobexperience
+    age = user.age
+    currentsalary_min = user.currentsalary_min (not required for now)
+    currentsalary_max = user.currentsalary_max(not required for now)
+    expectedsalary_min = user.currentsalary_min(not required for now)
+    expectedsalary_max = user.currentsalary_max(not required for now)
+    mygraduation = user.mygraduation
+    myeducationlevel(object or id key model)
+    {mycollege = user.mycollege
+    mycollegedegree = user.mycollegedegree
+    mycollegepercentage = user.mycollegepercentage}
+    
+    myschool = user.myschool
+    myschoolcertificatetype= user.myschoolcertificatetype(example ssc and cbse)
+    myschoolpercentage = user.myschoolpercentage
+    myjobexperience(object or id key model)
+    myjobcompany = user.myjobcompany
+    myjobstartdate = user.myjobstartdate 
+    myjobenddate = user.myjobenddate
+    myjobdescription = user.myjobdescription
+    downloadCV = user.downloadCV 
+    
     return render(request, 'techtable/dashboard.html')
 
 def developers(request):
     return render(request, 'techtable/developers.html')
 
 def edit_profile(request):
+    
     return render(request, 'techtable/edit-profile.html')
 
 
@@ -92,6 +127,19 @@ def faqs(request):
 
 
 def job_detail(request):
+    jobid = user.jobid
+#     jobprofile = user.jobprofile
+#     numberofopenings = user.numberofopenings
+#     jobdescription = user.jobdescription
+#     skillsrequired = user.skillsrequired
+#     jobresponsibilities = user.jobresponsibilities
+#     monthlystipend = user.monthlystipend
+#     perks = user.perks
+#     jobtype = user.jobtype 
+#     companytype = user.companytype
+#     worktime = user.worktime
+#     jobbrief = user.jobbrief
+#     joblocation = user.joblocatio
     return render(request, 'techtable/job-detail.html')
 
 def job_listing(request):
@@ -101,6 +149,18 @@ def packages(request):
     return render(request, 'techtable/packages.html')
 
 def post_job(request):
+#     jobprofile = user.jobprofile
+#     numberofopenings = user.numberofopenings
+#     jobdescription = user.jobdescription
+#     skillsrequired = user.skillsrequired
+#     jobresponsibilities = user.jobresponsibilities
+#     monthlystipend = user.monthlystipend
+#     perks = user.perks
+#     jobtype = user.jobtype 
+#     companytype = user.companytype
+#     worktime = user.worktime
+#     jobbrief = user.jobbrief
+#     joblocation = user.joblocation
     return render(request, 'techtable/post-job.html')
 
 def typography(request):
