@@ -15,10 +15,25 @@ def index(request):
     return render(request, 'techtable/index.html')
 
 def internapplytpage(request):
+#     jobprofile = user.jobprofile
+#     companytype = user.companytype
+#     worktime = user.worktime
+#     jobbrief = user.jobbrief
+#     joblocation = user.joblocation
     return render(request, 'techtable/internapplytpage.html')
 
 
 def postaninternsip(request):
+#     jobtitle = user.jobprofile (Type - string to be selected from dropdown) 
+#     industyarea = user.companytype (Type - string to be selected from dropdown) 
+#     monthlysalary_min = user.monthlysalary_min(Type - number)
+#     monthlysalary_max = user.monthlysalary_max(Type - number)
+#     joblocation = user.joblocation(Type - string to be selected from dropdown) 
+#     employment_type = user.employment_type(Type - string to be selected from dropdown) 
+#     number_of_positions = user.number_of_positions(Type - number)
+#     experience_required = user.experience_required(Type - number) 
+#     brief_description_of_job = user.brief_description_of_job(Type a string #Paragraph)
+#     job_description = user.job_description(Type a string #Paragraph)
     return render(request, 'techtable/postaninternsip.html')
 
 def requestservices(request):
