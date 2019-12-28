@@ -7,6 +7,8 @@
 
 {% block main_content %}
 
+
+ <!-- Page Title start -->
 <section id="pageTitle">
   <div class="container">
     <div class="row">
@@ -14,7 +16,7 @@
         <h1 class="page-heading">404 Error Page</h1>
       </div>
       <div class="col-md-6 col-sm-6">
-        <div class="breadCrumb"><a href="#.">Home</a> / <span>404 Error</span></div>
+        <div class="breadCrumb"><a href="{% url 'techtable:index' %}">Home</a> / <span>404 Error</span></div>
       </div>
     </div>
   </div>
@@ -28,7 +30,7 @@
       <h3>Page was not Found</h3>
       <div class="error-msg">
         <p>The page you are looking is not available or has been removed. Try going to Home Page by using the button below.</p>
-        <a href="#." class="btn">Go to Home Page</a> </div>
+        <a href="{% url 'techtable:index' %}" class="btn">Go to Home Page</a> </div>
     </div>
   </div>
 </section>

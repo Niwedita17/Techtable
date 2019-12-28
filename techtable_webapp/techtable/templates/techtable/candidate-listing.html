@@ -7,6 +7,7 @@
 
 {% block main_content %}
 
+
 <!-- Page Title start -->
 <section id="pageTitle">
   <div class="container">
@@ -224,7 +225,7 @@
           <li>
             <div class="row">
               <div class="col-md-5 col-sm-5">
-                <div class="jobimg"><img src="{% static 'techtable/img/candidates/01.jpg' %}" alt="Candidate Name" /></div>
+                <div class="jobimg"><img src="{%static 'techtable/img/candidates/01.jpg' %" alt="Candidate Name" /></div>
                 <div class="jobinfo">
                   <h3><a href="#.">Jhon Doe</a></h3>
                   <div class="cateinfo">Java Developer</div>
@@ -245,7 +246,7 @@
           <li>
             <div class="row">
               <div class="col-md-5 col-sm-5">
-                <div class="jobimg"><img src="{% static 'techtable/img/candidates/02.jpg' %}" alt="Candidate Name" /></div>
+                <div class="jobimg"><img src="{%static 'techtable/img/candidates/02.jpg' %}" alt="Candidate Name" /></div>
                 <div class="jobinfo">
                   <h3><a href="#.">Jhon Doe</a></h3>
                   <div class="cateinfo">Java Developer</div>
@@ -266,7 +267,7 @@
           <li>
             <div class="row">
               <div class="col-md-5 col-sm-5">
-                <div class="jobimg"><img src="{% static 'techtable/img/candidates/03.jpg' %}" alt="Candidate Name" /></div>
+                <div class="jobimg"><img src="{%static 'techtable/img/candidates/03.jpg' %}" alt="Candidate Name" /></div>
                 <div class="jobinfo">
                   <h3><a href="#.">Jhon Doe</a></h3>
                   <div class="cateinfo">Java Developer</div>
@@ -287,7 +288,7 @@
           <li>
             <div class="row">
               <div class="col-md-5 col-sm-5">
-                <div class="jobimg"><img src="images{% static 'techtable/img/candidates/04.jpg' %}" alt="Candidate Name" /></div>
+                <div class="jobimg"><img src="{%static 'techtable/img/candidates/04.jpg' %}" alt="Candidate Name" /></div>
                 <div class="jobinfo">
                   <h3><a href="#.">Jhon Doe</a></h3>
                   <div class="cateinfo">Java Developer</div>
@@ -308,7 +309,7 @@
           <li>
             <div class="row">
               <div class="col-md-5 col-sm-5">
-                <div class="jobimg"><img src="{% static 'techtable/img/candidates/05.jpg' %}" alt="Candidate Name" /></div>
+                <div class="jobimg"><img src="{%static 'techtable/img/candidates/05.jpg' %}" alt="Candidate Name" /></div>
                 <div class="jobinfo">
                   <h3><a href="#.">Jhon Doe</a></h3>
                   <div class="cateinfo">Java Developer</div>
@@ -329,7 +330,7 @@
           <li>
             <div class="row">
               <div class="col-md-5 col-sm-5">
-                <div class="jobimg"><img src="{% static 'techtable/img/candidates/01.jpg' %}" alt="Candidate Name" /></div>
+                <div class="jobimg"><img src="{%static 'techtable/img/candidates/01.jpg' %}" alt="Candidate Name" /></div>
                 <div class="jobinfo">
                   <h3><a href="#.">Jhon Doe</a></h3>
                   <div class="cateinfo">Java Developer</div>
@@ -350,7 +351,7 @@
           <li>
             <div class="row">
               <div class="col-md-5 col-sm-5">
-                <div class="jobimg"><img src="{% static 'techtable/img/candidates/02.jpg' %}" alt="Candidate Name" /></div>
+                <div class="jobimg"><img src="{%static 'techtable/img/candidates/02.jpg' %}" alt="Candidate Name" /></div>
                 <div class="jobinfo">
                   <h3><a href="#.">Jhon Doe</a></h3>
                   <div class="cateinfo">Java Developer</div>
@@ -371,7 +372,7 @@
           <li>
             <div class="row">
               <div class="col-md-5 col-sm-5">
-                <div class="jobimg"><img src="{% static 'techtable/img/candidates/03.jpg' %}" alt="Candidate Name" /></div>
+                <div class="jobimg"><img src="{%static 'techtable/img/candidates/03.jpg' %}" alt="Candidate Name" /></div>
                 <div class="jobinfo">
                   <h3><a href="#.">Jhon Doe</a></h3>
                   <div class="cateinfo">Java Developer</div>
@@ -392,7 +393,7 @@
           <li>
             <div class="row">
               <div class="col-md-5 col-sm-5">
-                <div class="jobimg"><img src="{% static 'techtable/img/candidates/04.jpg' %}" alt="Candidate Name" /></div>
+                <div class="jobimg"><img src="{%static 'techtable/img/candidates/04.jpg' %}" alt="Candidate Name" /></div>
                 <div class="jobinfo">
                   <h3><a href="#.">Jhon Doe</a></h3>
                   <div class="cateinfo">Java Developer</div>
@@ -413,7 +414,7 @@
           <li>
             <div class="row">
               <div class="col-md-5 col-sm-5">
-                <div class="jobimg"><img src="{% static 'techtable/img/candidates/05.jpg' %}" alt="Candidate Name" /></div>
+                <div class="jobimg"><img src="{%static 'techtable/img/candidates/05.jpg' %}" alt="Candidate Name" /></div>
                 <div class="jobinfo">
                   <h3><a href="#.">Jhon Doe</a></h3>
                   <div class="cateinfo">Java Developer</div>
@@ -456,22 +457,5 @@
     </div>
   </div>
 </section>
-
-<!--Copyright-->
-<div class="copyright">
-  <div class="container">
-    <div class="bttxt">Copyright &copy; 2017 Your Company Name. All Rights Reserved. Design by: <a href="http://graphicriver.net/user/ecreativesol" target="_blank">eCreativeSolutions</a></div>
-  </div>
-</div>
-
-<!-- Bootstrap's JavaScript --> 
-<script src="{% static 'techtable/js/jquery-2.1.4.min.js' %}"></script>
-<script src="{% static 'techtable/js/bootstrap.min.js' %}"></script>
-
-<!-- Owl carousel --> 
-<script src="{% static 'techtable/js/owl.carousel.js' %}"></script>
-
-<!-- Custom js --> 
-<script src="{% static 'techtable/js/script.js' %}"></script>
 
 {% endblock %}

@@ -7,6 +7,7 @@
 
 {% block main_content %}
 
+
 <!-- Search start -->
 <section id="searchwrap">
   <div class="container">
@@ -57,7 +58,7 @@
       <!--step 2-->
       <li class="col-md-4 col-sm-4">
         <div class="iconcircle"><i class="fa fa-black-tie" aria-hidden="true"></i></div>
-        <h4> <a href="{% url 'techtable:applyforintenship' %}">Apply for Internships</a></h4>
+        <h4 href="{% url 'techtable:applyforajob' %}">Apply for Internships</h4>
         <p>
           Go to start-up connect page and click on apply for internship, choose your profile you want to work for and apply.
         </p>
@@ -94,7 +95,7 @@
           </p>
         </div>
     </div>
-  </section>
+</section>>
   <!-- About us ends -->
 
 <!-- Our Services -->
@@ -109,7 +110,7 @@
       <div class="row">
 
         <div class="col-lg-3 ">
-                  <img src="{% static 'techtable/img/handshake.png' %}" width="150px">
+                  <img src="{%static 'techtable/img/handshake.png' %}" width="150px">
         </div>
         <div class="col-lg-9 ">
                   <h2>Startup Connect </h2>
@@ -129,7 +130,7 @@
       <div class="row">
 
         <div class="col-lg-3 ">
-            <img src="{% static 'techtable/img/promotion.png' %}" width="150px">
+            <img src="{%static 'techtable/img/promotion.png' %}" width="150px">
         </div>
         
         <div class="col-lg-9 ">
@@ -147,7 +148,7 @@
       <div class="row">
 
         <div class="col-lg-3 ">
-            <img src="{% static 'techtable/img/startup.png' %}" width="150px">
+            <img src="{%static 'techtable/img/startup.png' %}" width="150px">
         </div>
 
         <div class="col-lg-9 ">
@@ -176,7 +177,7 @@
 
 
 <!-- Top Employers start -->
-<section id="employ">
+<section id="sec">
   <div class="container"> 
     <div class="titleTop">
       <div class="subtitle">Here You Can See</div>
@@ -186,32 +187,32 @@
 
   <div class="col-md-2 connectedstartups">
     <a href="https://www.facebook.com/MicroLifeInnovations/">
-      <img src="{% static 'techtable/img/logos/micro-life.png' %}" alt="Micro Life Innovations" />
+      <img src="{%static 'techtable/img/logos/micro-life.png' %}" alt="Micro Life Innovations" />
     </a>
   </div>
   <div class="col-md-2 connectedstartups">
     <a href="http://mistay.in/">
-      <img src="{% static 'techtable/img/logos/mistay.png' %}" alt="Mistay.in" />
+      <img src="{%static 'techtable/img/logos/mistay.png' %}" alt="Mistay.in" />
     </a>
   </div>
   <div class="col-md-2 connectedstartups">
     <a href="http://www.tathya.earth/">
-      <img src="{% static 'techtable/img/logos/Tatya.jpg' %}" alt="Thathya" />
+      <img src="{%static 'techtable/img/logos/Tatya.jpg' %}" alt="Thathya" />
     </a>
   </div>
   <div class="col-md-2 connectedstartups">
     <a href="http://www.Hansmartimony.com">
-      <img src="{% static 'techtable/img/logos/logo_hans.png' %}" alt="Hansmartimony" />
+      <img src="{%static 'techtable/img/logos/logo_hans.png' %}" alt="Hansmartimony" />
     </a>
   </div>
   <div class="col-md-2 connectedstartups">
     <a href="http://www.Syook.com">
-      <img src="{% static 'techtable/img/logos/syook.png' %}" alt="Syook" />
+      <img src="{%static 'techtable/img/logos/syook.png' %}" alt="Syook" />
     </a>
   </div>
           <div class="col-md-2 connectedstartups">
             <a href="http://www.Awiskarlab.com">
-                <img src="{% static 'techtable/img/logos/Awiskarlab.png' %}" alt="Awiskarlab" />
+                <img src="{%static 'techtable/img/logos/Awiskarlab.png' %}" alt="Awiskarlab" />
             </a>
           </div>
 
@@ -220,7 +221,7 @@
 </section>
 <!-- Top Employers ends --> 
 <!-- Support start -->
-<section id="amazing">
+<section id="sect">
   <div class="container"> 
     <!-- title start -->
     <div class="titleTop">
@@ -230,11 +231,11 @@
     <!-- title end -->
     <div class="row">
       <div class="col-md-6 text-center">
-  <img src="{% static 'techtable/img/logos/nirmaan.png' %}" height="200px" />
+  <img src="{%static 'techtable/img/logos/nirmaan.png' %}" height="200px" />
   <h3 style="padding-top: 20px;">Nirmaan</h3>
       </div>
       <div class="col-md-6 text-center">
-  <img src="{% static 'techtable/img/logos/Ecell.png' %}" height="200px" />
+  <img src="{%static 'techtable/img/logos/Ecell.png' %}" height="200px" />
   <h3 style="padding-top: 20px;">Ecell-IITM</h3>
       </div>
 
@@ -281,7 +282,7 @@
     <div class="row">
       <div class="col-md-5 col-sm-6"> 
         <!--app image Start-->
-        <div class="appimg"><img src="{% static 'techtable/img/logo_tagline.png' %}" alt="logo" /></div>
+        <div class="appimg"><img src="{%static 'techtable/img/logo_tagline.png' %}" alt="logo" /></div>
         <!--app image end--> 
       </div>
       <div class="col-md-7 col-sm-6"> 
@@ -304,4 +305,5 @@
   </div>
 </section>
 <!-- App End --> 
+
 {% endblock %}

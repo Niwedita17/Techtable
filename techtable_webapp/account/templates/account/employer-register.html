@@ -1,0 +1,82 @@
+{% extends 'techtable/base.html' %}
+{% load static %}
+
+{% block title_content %}
+<title> Home </title>
+{% endblock %}
+
+{% block main_content %}
+
+
+<!-- Page Title start -->
+<section id="pageTitle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <h1 class="page-heading">Register</h1>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="breadCrumb"><a href="{% url 'techtable:index' %}">Home</a> / <a href="{% url 'account:candidate-login' %}"><span>Log In</span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Page Title End -->
+
+<section id="listpgWraper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="userccount">
+          <div class="socialLogin">
+            <h5>Get Started with </h5>
+            <a href="#." class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="#." class="gp"><i class="fa fa-google-plus" aria-hidden="true"></i></a> <a href="#." class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a> </div>
+          <div class="alert alert-success" role="alert"><strong>Well done!</strong> Your account successfully created.</div>
+          <div class="alert alert-warning" role="alert"><strong>Warning!</strong> Better check yourself, you're not looking too good.</div>
+          <div class="alert alert-danger" role="alert"><strong>Oh snap!</strong> Change a few things up and try submitting again.</div>
+          <div class="userbtns">
+            <ul class="nav nav-tabs">
+              <li><a data-toggle="tab" href="{% url 'account:candidate-register' %}">Candidate</a></li>
+                <li class="active"><a data-toggle="tab" href="#employer">Employer</a></li>
+
+            </ul>
+          </div>
+
+            <div id="employer" class="formpanel tab-pane fade in">
+              <form method="post">
+              {% csrf_token %}
+              {% for field in form %}
+              <div class="formrow">
+                <p>
+                  {{ field.label_tag }}<br>
+                  <input type="text" name="name" class="form-control">
+                </p>
+                  {% for error in field.errors %}
+                    <p>{{ error }}
+                  {% endfor %}
+                    </p>
+              </div>
+              {% endfor %}
+
+              {% if error_message %}
+              <p> {{error_message }}</p>
+              {% endif %}
+
+              <div class="formrow">
+                <input type="checkbox" value="agree text c" name="cagree" />
+                Agree to our terms and conditions</div>
+                <div class="formrow">
+                  <input type="checkbox" value="agree text" name="agree" />
+                  Stay Updates</div>
+
+              <input type="submit" class="btn" value="Register">
+              </form>
+            </div>
+          <div class="newuser"><i class="fa fa-user" aria-hidden="true"></i> Already a Member? <a href="{% url 'account:candidate-login' %}">Login Here</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

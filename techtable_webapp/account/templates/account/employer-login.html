@@ -1,0 +1,64 @@
+{% extends 'techtable/base.html' %}
+{% load static %}
+
+{% block title_content %}
+<title> Home </title>
+{% endblock %}
+
+{% block main_content %}
+
+ <!-- Page Title start -->
+<section id="pageTitle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <h1 class="page-heading">Sign In</h1>
+      </div>
+      <div class="col-md-6 col-sm-6">
+          <div class="breadCrumb"><a href="{% url 'techtable:index' %}">Home</a> / <a href="{% url 'account:candidate-register' %}"><span>Register</span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Page Title End -->
+
+<section id="listpgWraper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="userccount">
+          <div class="socialLogin">
+            <h5>Continue with </h5>
+            <a href="#." class="fb"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="#." class="gp"><i class="fa fa-google-plus" aria-hidden="true"></i></a> <a href="#." class="tw"><i class="fa fa-twitter" aria-hidden="true"></i></a> </div>
+          <div class="userbtns">
+            <ul class="nav nav-tabs">
+
+              <li><a data-toggle="tab" href="{% url 'account:candidate-login' %}">Candidate</a></li>
+                <li class="active"><a data-toggle="tab" href="#employer">Employer</a></li>
+            </ul>
+          </div>
+
+              {% csrf_token %}
+            <div id="employer" class="formpanel tab-pane fade in active">
+              {% for field in form %}
+              <div class="formrow">
+                <p>
+                  {{ field.label_tag }}<br>
+                </p>
+                <input type="text" name="user_id" class="form-control">
+              </div>
+              {% endfor %}
+
+              <input type="submit" class="btn" value="LOG IN">
+            </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

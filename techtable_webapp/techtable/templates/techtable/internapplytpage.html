@@ -1,4 +1,5 @@
-<{% extends 'techtable/base.html' %}
+
+{% extends 'techtable/base.html' %}
 {% load static %}
 
 {% block title_content %}
@@ -8,7 +9,7 @@
 {% block main_content %}
 
 <!-- Page Title start -->
-<section id="pageTitle">
+<div class="pageTitle">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-sm-6">
@@ -19,10 +20,10 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 <!-- Page Title End -->
 
-<section id="listpgWraper">
+<div class="listpgWraper">
   <div class="container"> 
     
     <!-- Page Title start -->
@@ -272,10 +273,10 @@
         <!-- Sponsord By -->
         <div class="sidebar">
           <h4 class="widget-title">Sponsord By</h4>
-          <div class="gad"><img src="{% static 'techtable/img/googlead.jpg' %}" alt="your alt text" /></div>
-          <div class="gad"><img src="{% static 'techtable/img/googlead.jpg' %}" alt="your alt text" /></div>
-          <div class="gad"><img src="{% static 'techtable/img/googlead2.jpg' %}" alt="your alt text" /></div>
-          <div class="gad"><img src="{% static 'techtable/img/googlead2.jpg' %}" alt="your alt text" /></div>
+          <div class="gad"><img src="{%static 'techtable/img/googlead.jpg' %}" alt="your alt text" /></div>
+          <div class="gad"><img src="{%static 'techtable/img/googlead.jpg' %}" alt="your alt text" /></div>
+          <div class="gad"><img src="{%static 'techtable/img/googlead2.jpg' %}" alt="your alt text" /></div>
+          <div class="gad"><img src="{%static 'techtable/img/googlead2.jpg' %}" alt="your alt text" /></div>
         </div>
       </div>
       <div class="col-md-6 col-sm-12"> 
@@ -285,16 +286,16 @@
           <li>
             <div class="row">
               <div class="col-md-8 col-sm-8">
-                <div class="jobimg"><img src="{% static 'techtable/img/jobs/jobimg.jpg' %}" alt="Job Name" /></div>
+                <div class="jobimg"><img src="{%static 'techtable/img/jobs/jobimg.jpg' %}" alt="Job Name" /></div>
                 <div class="jobinfo">
-                  <h3><a href="job-detail.html">Technical Database Engineer</a></h3>
-                  <div class="companyName"><a href="job-detail.html">Datebase Management Company</a></div>
+                  <h3><a href="{% url 'techtable:job-detail' %}">Technical Database Engineer</a></h3>
+                  <div class="companyName"><a href="{% url 'techtable:job-detail' %}">Datebase Management Company</a></div>
                   <div class="location"><label class="fulltime">Full Time</label>   - <span>New York</span></div>
                 </div>
                 <div class="clearfix"></div>
               </div>
               <div class="col-md-4 col-sm-4">
-                <div class="listbtn"><a href="job-detail.html">Apply Now</a></div>
+                <div class="listbtn"><a href="{% url 'techtable:job-detail' %}">Apply Now</a></div>
               </div>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis arcu est. Phasellus vel dignissim tellus. Aenean fermentum fermentum convallis.</p>
@@ -324,23 +325,8 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<!--Copyright-->
-<section id="copyright">
-  <div class="container">
-    <div class="bttxt">Copyright &copy; 2017 Your Company Name. All Rights Reserved. Design by: <a href="http://graphicriver.net/user/ecreativesol" target="_blank">eCreativeSolutions</a></div>
-  </div>
-</section>
 
-<!-- Bootstrap's JavaScript --> 
-<script src="{% static 'techtable/js/jquery-2.1.4.min.js' %}"></script>
-<script src="{% static 'techtable/js/bootstrap.min.js' %}"></script>
-
-<!-- Owl carousel --> 
-<script src="{% static 'techtable/js/owl.carousel.js' %}"></script>
-
-<!-- Custom js --> 
-<script src="{% static 'techtable/js/script.js' %}"></script>
 
 {% endblock %}

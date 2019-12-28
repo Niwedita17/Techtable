@@ -3,50 +3,45 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from www.sharjeelanjum.com/html/jobs-portal/demo/edit-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Dec 2019 15:12:22 GMT -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Online Job Portal HTML</title>
-<!-- Fav Icon -->
-<link rel="shortcut icon" href="{% static 'techtable/img/favicon.ico' %}">
+<title>TechTable</title>
+<link rel="shortcut icon" href="images/logo.png">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
 
-<!-- Owl carousel -->
-<link href="{% static 'techtable/css/owl.carousel.css' %}" rel="stylesheet">
+{% block script_content %}
+   {% endblock %}
 
-<!-- Bootstrap -->
-<link href="{% static 'techtable/css/bootstrap.min.css' %}" rel="stylesheet">
-
-<!-- Font Awesome -->
-<link href="{% static 'techtable/css/font-awesome.css' %}" rel="stylesheet">
-
-<!-- Custom Style -->
-<link href="{% static 'techtable/css/main.css' %}" rel="stylesheet">
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-  <script src="{% static 'techtable/js/html5shiv.min.js' %}"></script>
-  <script src="{% static 'techtable/js/respond.min.js' %}"></script>
-<![endif]-->
+   {% block style_content %}
+   {% endblock %}
 
 </head>
-
 <body>
+
 {% include 'techtable/header.html' %}
 <div>
  {% block main_content %}
  {% endblock %}
 </div>
 {% include 'techtable/footer.html' %}
+
+
 <!-- Bootstrap's JavaScript -->
-<script src="{% static 'techtable/js/jquery-2.1.4.min.js' %}"></script>
-<script src="{% static 'techtable/js/bootstrap.min.js' %}"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 <!-- Owl carousel -->
-<script src="{% static 'techtable/js/owlns.carousel.js' %}"></script>
+<script src="js/owlns
+.carousel.js"></script>
 
 <!-- Custom js -->
-<script src="{% static 'techtable/js/script.js' %}"></script>
+<script src="js/script.js"></script>
+
+
 </body>
 </html>

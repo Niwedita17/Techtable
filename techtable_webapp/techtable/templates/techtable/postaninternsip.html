@@ -1,4 +1,4 @@
-<{% extends 'techtable/base.html' %}
+{% extends 'techtable/base.html' %}
 {% load static %}
 
 {% block title_content %}
@@ -7,8 +7,9 @@
 
 {% block main_content %}
 
+
 <!-- Page Title start -->
-<div class="pageTitle">
+<section id="pageTitle">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-sm-6">
@@ -19,7 +20,7 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 <!-- Page Title End -->
 
 <section id="listpgWraper">
@@ -144,20 +145,14 @@
                 <div class="formrow">
                 	<ul class="row featchoose">
                     	<li class="col-md-4"><input type="checkbox" name=""> Your Info</li>
-                        <li class="col-md-4"><input type="checkbox" name=""> Your Info</li>
-                        <li class="col-md-4"><input type="checkbox" name=""> Your Info</li>
-                        <li class="col-md-4"><input type="checkbox" name=""> Your Info</li>
-                        <li class="col-md-4"><input type="checkbox" name=""> Your Info</li>
-                        <li class="col-md-4"><input type="checkbox" name=""> Your Info</li>
-                        <li class="col-md-4"><input type="radio" name=""> Your radio Label</li>
-                        <li class="col-md-4"><input type="radio" name=""> Your radio Label</li>
-                        <li class="col-md-4"><input type="radio" name=""> Your radio Label</li>
+                        
                     </ul>
                 </div>
               </div>
               
               <div class="col-md-12">
                 <div class="formrow">
+                  <textarea class="form-control" name="jobbrief" placeholder="Brief description of job"></textarea>
                   <textarea class="form-control" name="jobdetail" placeholder="Job Detail"></textarea>
                 </div>
               </div>
@@ -171,21 +166,7 @@
   </div>
 </section>
 
-<!--Copyright-->
-<section id="copyright">
-  <div class="container">
-    <div class="bttxt">Copyright &copy; 2017 Your Company Name. All Rights Reserved. Design by: <a href="http://graphicriver.net/user/ecreativesol" target="_blank">eCreativeSolutions</a></div>
-  </div>
-</section>
 
-<!-- Bootstrap's JavaScript --> 
-<script src="{% static 'techtable/js/jquery-2.1.4.min.js' %}"></script>
-<script src="{% static 'techtable/js/bootstrap.min.js' %}"></script>
 
-<!-- Owl carousel -->
-<script src="{% static 'techtable/js/owl.carousel.js' %}"></script>
-
-<!-- Custom js -->
-<script src="{% static 'techtable/js/script.js' %}"></script>
 
 {% endblock %}
