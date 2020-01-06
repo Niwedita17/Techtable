@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TechTable</title>
+<link rel="shortcut icon" href="{%static 'accounts/img/logo.png' %}">
+<link href="{%static 'accounts/css/owl.carousel.css' %}" rel="stylesheet">
+<link href="{%static 'accounts/css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{%static 'accounts/css/font-awesome.css' %}" rel="stylesheet">
+<link href="{%static 'accounts/css/main.css' %}" rel="stylesheet">
+
+{% block script_content %}
+   {% endblock %}
+
+   {% block style_content %}
+   {% endblock %}
+
+</head>
+<body>
+
+{% include 'techtable/header.html' %}
+<div>
+ {% block main_content %}
+ {% endblock %}
+</div>
+{% include 'techtable/footer.html' %}
+
+
+<!-- Bootstrap's JavaScript -->
+<script src="{%static 'accounts/js/jquery-2.1.4.min.js' %}"></script>
+<script src="{%static 'accounts/js/bootstrap.min.js' %}"></script>
+
+<!-- Owl carousel -->
+<script src="{%static 'accounts/js/owlns
+.carousel.js' %}"></script>
+
+<!-- Custom js -->
+<script src="{%static 'accounts/js/script.js' %}"></script>
+
+
+</body>
+</html>

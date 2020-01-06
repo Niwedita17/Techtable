@@ -32,7 +32,8 @@
                             <li><a href="{% url 'techtable:404' %}">Provide Services</a></li>
                           </ul>
                       </li> -->
-                    <li><a href="{% url 'accounts:edit-profile' %}">{{user.get_username}}</a></li>
+                        <li><a href="{% url 'accounts:edit-profile' %}">{{user.get_username}}</a></li>
+
                       <li><a href="{% url 'techtable:contact-us' %}">Contact us</a></li>
                         <li><form class="logout-link" action="{% url 'accounts:logout' %}"  method="post">
                               {% csrf_token %}

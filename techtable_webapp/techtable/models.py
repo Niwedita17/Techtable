@@ -1,28 +1,33 @@
 from django.core.validators import MaxValueValidator, MinValueValidator, RegexValidator
 from django.db import models
 
-
+# from techtable_webapp.accounts.models import Candidate, Employer
 # Create your models here.
 
-class CandidateInfo(models.Model):
-    username = models.CharField(primary_key=True, max_length=8, validators=[
-        RegexValidator(
-            regex='^C[0-9]{2}[A-Z]{2}[0-9]{3}$',
-            message='Username should be of form e.g C20CO101',
-            code='invalid_candidate_Username'),
-                                ])
-    name = models.CharField(max_length=15)
-    email = models.EmailField(max_length=50)
+
+class InternshipInfo(models.Model):
+    jobtitle = models.CharField(max_length=100, default='')
+    industyarea = models.CharField(max_length=100, default='')
+    monthlysalary_min = models.CharField(max_length=15, default='')
+    monthlysalary_max = models.CharField(max_length=15, default='')
+    joblocation = models.CharField(max_length=100, default='')
+    employment_type = models.CharField(max_length=100, default='')
+    number_of_positions = models.CharField(max_length=10, default='')
+    experience_required = models.CharField(max_length=100, default='')
+    brief_description_of_job = models.CharField(max_length=200, default='')
+    job_description = models.CharField(max_length=500, default='')
 
 
-
-class EmployerInfo(models.Model):
-    username = models.CharField(primary_key=True, max_length=8, validators=[
-        RegexValidator(
-            regex='^E[0-9]{2}[A-Z]{2}[0-9]{3}$',
-            message='Username should be of form e.g E19CO101',
-            code='invalid_employer_Username'),
-                                ])
-    name = models.CharField(max_length=15)
-    email = models.EmailField(max_length=50)
-
+class JobInfo(models.Model):
+    jobprofile = models.CharField(max_length=100, default='')
+    numberofopenings = models.CharField(max_length=10, default='')
+    jobdescription = models.CharField(max_length=500, default='')
+    skillsrequired = models.CharField(max_length=100, default='')
+    jobresponsibilities = models.CharField(max_length=100, default='')
+    monthlystipend = models.CharField(max_length=10, default='')
+    perks = models.CharField(max_length=10, default='')
+    jobtype = models.CharField(max_length=100, default='')
+    companytype = models.CharField(max_length=100, default='')
+    worktime = models.CharField(max_length=5, default='')
+    jobbrief = models.CharField(max_length=200, default='')
+    joblocation = models.CharField(max_length=100, default='')

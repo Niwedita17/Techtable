@@ -19,6 +19,5 @@ urlpatterns = [
         url(r'^candidate-listing/$', user_views.candidate_listing, name='candidate-listing'),
         url(r'^company-detail/$', user_views.company_detail, name='company-detail'),
         url(r'^companydashboard/$', user_views.companydashboard, name='companydashboard'),
-        url(r'^edit-profile/$', user_views.edit_profile, name='edit-profile'),
         url(r'^job-listing/$', user_views.job_listing, name='job-listing'),
     ]

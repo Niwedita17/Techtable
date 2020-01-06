@@ -8,12 +8,12 @@ from django.urls import reverse
 from django.utils.datetime_safe import date
 from django.template import RequestContext
 
-
-from .models import CandidateInfo, EmployerInfo
+# from .forms import EditProfileForm
 # Create your views here.
 
 def index(request):
     return render(request, 'techtable/index.html')
+
 
 def internapplytpage(request):
     #     jobprofile = user.jobprofile
@@ -62,10 +62,6 @@ def company_detail(request):
 
 def companydashboard(request):
     return render(request, 'techtable/companydashboard.html')
-
-
-def edit_profile(request):
-    return render(request, 'techtable/edit-profile.html')
 
 
 def job_detail(request):

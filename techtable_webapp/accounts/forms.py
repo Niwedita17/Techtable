@@ -27,5 +27,24 @@ class EmployerSignupForm(UserCreationForm):
         fields = ('username', 'name', 'email', 'password1', 'password2',)
 
 
+class EditProfileForm(forms.ModelForm):
+    def __init__(self, *args, **kwargs):
+        super(EditProfileForm, self).__init__(*args, **kwargs)
 
+        profile = kwargs.get('instance')
+        if profile:
+            kwargs['instance'] = profile.user
+
+        self.user_form = CandidateSignupForm(*args, **kwargs)
+
+        self.fields.update(self.user_form.fields)
+        self.initial.update(self.user_form.initial)
+
+    def save(self, *args, **kwargs):
+        self.user_form.save(*args, **kwargs)
+        return super(EditProfileForm, self).save(*args, **kwargs)
+
+    class Meta:
+        model = models.Candidate
+        exclude = ('user',)
 
